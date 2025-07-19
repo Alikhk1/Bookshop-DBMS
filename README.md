@@ -5,19 +5,17 @@ Built as a semester project for the Database Systems course.
 ## 🛠 Tech Stack
 - Java (console + JavaFX UI)
 
-   SQL Server (relational database)
+- SQL Server (relational database)
 
 - JDBC (database connectivity)
 
 - Maven (build and dependency management)
 
 ## 📄 Project Report
-See Project Report for:
+See Project Report/Project Report.pdf for:
 
-Database design & ER diagram
+- Database design & ER diagram
 
-Description of tables, fields, and constraints
+- Description of tables, fields, and constraints
 
-Project workflow and use cases
-
-Screenshots / explanation of JavaFX interface
+- Screenshots / explanation of JavaFX interface
