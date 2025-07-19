@@ -12,7 +12,7 @@ Built as a semester project for the Database Systems course.
 - Maven (build and dependency management)
 
 ## 📄 Project Report
-See docs/Bookshop_Management_System_Report.docx for:
+See Project Report for:
 
 Database design & ER diagram
 
