@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bookshopmanagementsystem.EmployeesController">
+   <children>
+      <TableView fx:id="employeesTable" layoutX="193.0" layoutY="169.0" prefHeight="527.0" prefWidth="886.0">
+         <columns>
+            <TableColumn fx:id="columnEID" prefWidth="49.0" text="EID" />
+            <TableColumn fx:id="columnFirstName" prefWidth="84.0" text="FirstName" />
+            <TableColumn fx:id="columnLastName" prefWidth="78.0" text="LastName" />
+            <TableColumn fx:id="columnDateJoined" prefWidth="78.0" text="Date Joined" />
+            <TableColumn fx:id="columnDesignation" prefWidth="82.0" text="Designation" />
+            <TableColumn fx:id="columnSalary" prefWidth="86.0" text="Salary" />
+            <TableColumn fx:id="columnDOB" prefWidth="104.0" text="DOB" />
+            <TableColumn fx:id="columnAddress" prefWidth="142.0" text="Address" />
+            <TableColumn fx:id="columnEmail" prefWidth="182.0" text="Email" />
+         </columns>
+      </TableView>
+      <Separator layoutX="9.0" layoutY="64.0" prefHeight="1.0" prefWidth="1080.0" />
+      <Label layoutX="357.0" layoutY="24.0" prefHeight="38.0" prefWidth="137.0" text="Employees" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri" size="26.0" />
+         </font>
+      </Label>
+      <Separator layoutX="187.0" layoutY="65.0" orientation="VERTICAL" prefHeight="636.0" prefWidth="6.0" />
+      <Label layoutX="34.0" layoutY="74.0" text="EID" />
+      <Label layoutX="25.0" layoutY="100.0" text="FirstName" />
+      <Label layoutX="20.0" layoutY="125.0" prefHeight="17.0" prefWidth="64.0" text="LastName" />
+      <Label layoutX="19.0" layoutY="152.0" text="Date Joined " />
+      <Label layoutX="16.0" layoutY="179.0" text="Designation" />
+      <Label layoutX="28.0" layoutY="205.0" text="Salary" />
+      <Label layoutX="33.0" layoutY="230.0" text="DOB" />
+      <Label layoutX="29.0" layoutY="253.0" text="Address" />
+      <Label layoutX="31.0" layoutY="280.0" text="Email" />
+      <Button layoutX="91.0" layoutY="316.0" mnemonicParsing="false" onAction="#insertEmployees" text="Add Employee" />
+      <TextField fx:id="EID" layoutX="87.0" layoutY="70.0" prefHeight="3.0" prefWidth="100.0" promptText="Employee ID" />
+      <TextField fx:id="FirstName" layoutX="87.0" layoutY="96.0" prefHeight="3.0" prefWidth="100.0" promptText="First Name" />
+      <TextField fx:id="LastName" layoutX="87.0" layoutY="121.0" prefHeight="3.0" prefWidth="100.0" promptText="Last Name" />
+      <TextField fx:id="DateJoined" layoutX="87.0" layoutY="148.0" prefHeight="3.0" prefWidth="100.0" promptText="Date Joined" />
+      <TextField fx:id="Designation" layoutX="87.0" layoutY="175.0" prefHeight="3.0" prefWidth="100.0" promptText="Designation" />
+      <TextField fx:id="Salary" layoutX="87.0" layoutY="201.0" prefHeight="3.0" prefWidth="100.0" promptText="Salary" />
+      <TextField fx:id="DOB" layoutX="87.0" layoutY="226.0" prefHeight="3.0" prefWidth="100.0" promptText="DOB" />
+      <TextField fx:id="Address" layoutX="87.0" layoutY="249.0" prefHeight="3.0" prefWidth="100.0" promptText="Address" />
+      <TextField fx:id="Email" layoutX="87.0" layoutY="276.0" prefHeight="3.0" prefWidth="100.0" promptText="Email" />
+      <Label layoutX="218.0" layoutY="74.0" text="EID" />
+      <TextField fx:id="searchEID" layoutX="212.0" layoutY="96.0" prefHeight="3.0" prefWidth="100.0" promptText="Employee ID" />
+      <Label layoutX="347.0" layoutY="74.0" text="New Salary" />
+      <TextField fx:id="searchSalary" layoutX="342.0" layoutY="96.0" prefHeight="3.0" prefWidth="100.0" promptText="New Salary" />
+      <Button layoutX="212.0" layoutY="140.0" mnemonicParsing="false" onAction="#searchEmployees" text="Search" />
+      <Button layoutX="273.0" layoutY="140.0" mnemonicParsing="false" onAction="#updateEmployees" text="Update" />
+      <Button layoutX="342.0" layoutY="140.0" mnemonicParsing="false" onAction="#deleteEmployees" text="Delete" />
+      <Button layoutX="406.0" layoutY="140.0" mnemonicParsing="false" onAction="#searchAllEmployees" text="Search All Employees" />
+      <Button layoutX="20.0" layoutY="31.0" mnemonicParsing="false" onAction="#switchtoMenu" text="Back" textFill="#0909ff" />
+      <Label layoutX="22.0" layoutY="497.0" text="Result Console" />
+      <TextArea fx:id="employeesResultConsole" layoutX="17.0" layoutY="518.0" prefHeight="181.0" prefWidth="170.0" />
+   </children>
+</AnchorPane>

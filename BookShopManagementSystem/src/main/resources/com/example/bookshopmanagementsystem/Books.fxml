@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bookshopmanagementsystem.BooksController">
+   <children>
+      <TableView fx:id="booksTable" layoutX="187.0" layoutY="163.0" prefHeight="527.0" prefWidth="886.0">
+        <columns>
+          <TableColumn fx:id="columnBID" prefWidth="49.0" text="BID" />
+          <TableColumn fx:id="columnAuthor" prefWidth="51.0" text="Author" />
+            <TableColumn fx:id="columnTitle" prefWidth="75.0" text="Title" />
+            <TableColumn fx:id="columnPublisher" prefWidth="75.0" text="Publisher" />
+            <TableColumn fx:id="columnYear" prefWidth="45.0" text="Year" />
+            <TableColumn fx:id="columnPages" prefWidth="65.0" text="Pages" />
+            <TableColumn fx:id="columnLanguage" prefWidth="75.0" text="Language" />
+            <TableColumn fx:id="columnTopic" prefWidth="57.0" text="Topic" />
+            <TableColumn fx:id="columnISBN" prefWidth="75.33331298828125" text="ISBN" />
+            <TableColumn fx:id="columnDateAdded" prefWidth="75.33331298828125" text="Date Added" />
+            <TableColumn fx:id="columnClassification" prefWidth="75.33331298828125" text="DDC" />
+            <TableColumn fx:id="columnQuantity" prefWidth="75.33331298828125" text="Quantity" />
+            <TableColumn fx:id="columnPrice" prefWidth="88.0" text="Price" />
+        </columns>
+      </TableView>
+      <Separator layoutX="-1.0" layoutY="54.0" prefHeight="1.0" prefWidth="1080.0" />
+      <Label layoutX="347.0" layoutY="14.0" prefHeight="38.0" prefWidth="69.0" text="Books" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri" size="26.0" />
+         </font>
+      </Label>
+      <Separator layoutX="177.0" layoutY="55.0" orientation="VERTICAL" prefHeight="646.0" prefWidth="10.0" />
+      <Label layoutX="24.0" layoutY="64.0" text="BID" />
+      <Label layoutX="15.0" layoutY="90.0" text="Author" />
+      <Label layoutX="19.0" layoutY="115.0" prefHeight="17.0" prefWidth="29.0" text="Title" />
+      <Label layoutX="9.0" layoutY="142.0" text="Publisher" />
+      <Label layoutX="22.0" layoutY="169.0" text="Year" />
+      <Label layoutX="18.0" layoutY="195.0" text="Pages" />
+      <Label layoutX="5.0" layoutY="220.0" text="Language" />
+      <Label layoutX="19.0" layoutY="243.0" text="Topic" />
+      <Label layoutX="21.0" layoutY="270.0" text="ISBN" />
+      <Label layoutX="1.0" layoutY="294.0" text="Date Added" />
+      <Label layoutX="3.0" layoutY="315.0" text="Classification" />
+      <Label layoutX="8.0" layoutY="336.0" text="Quantity" />
+      <Button layoutX="103.0" layoutY="401.0" mnemonicParsing="false" onAction="#insertBooks" text="Add Book" />
+      <TextField fx:id="BID" layoutX="77.0" layoutY="60.0" prefHeight="3.0" prefWidth="100.0" promptText="Book ID" />
+      <TextField fx:id="Author" layoutX="77.0" layoutY="86.0" prefHeight="3.0" prefWidth="100.0" promptText="Author" />
+      <TextField fx:id="Title" layoutX="77.0" layoutY="111.0" prefHeight="3.0" prefWidth="100.0" promptText="Title" />
+      <TextField fx:id="Publisher" layoutX="77.0" layoutY="138.0" prefHeight="3.0" prefWidth="100.0" promptText="Publisher" />
+      <TextField fx:id="Year" layoutX="77.0" layoutY="165.0" prefHeight="3.0" prefWidth="100.0" promptText="Year" />
+      <TextField fx:id="Pages" layoutX="77.0" layoutY="191.0" prefHeight="3.0" prefWidth="100.0" promptText="Pages" />
+      <TextField fx:id="Language" layoutX="77.0" layoutY="216.0" prefHeight="3.0" prefWidth="100.0" promptText="Language" />
+      <TextField fx:id="Topic" layoutX="77.0" layoutY="239.0" prefHeight="3.0" prefWidth="100.0" promptText="Topic" />
+      <TextField fx:id="ISBN" layoutX="77.0" layoutY="266.0" prefHeight="3.0" prefWidth="100.0" promptText="ISBN" />
+      <TextField fx:id="DateAdded" layoutX="77.0" layoutY="290.0" prefHeight="3.0" prefWidth="100.0" promptText="Date Added" />
+      <TextField fx:id="DDC" layoutX="77.0" layoutY="311.0" prefHeight="3.0" prefWidth="100.0" promptText="DDC Number" />
+      <TextField fx:id="Quantity" layoutX="77.0" layoutY="332.0" prefHeight="3.0" prefWidth="100.0" promptText="Quantity" />
+      <Label layoutX="208.0" layoutY="64.0" text="BID" />
+      <TextField fx:id="searchBID" layoutX="202.0" layoutY="86.0" prefHeight="3.0" prefWidth="100.0" promptText="Book ID" />
+      <Label layoutX="337.0" layoutY="64.0" text="New Quantity" />
+      <TextField fx:id="searchQuantity" layoutX="332.0" layoutY="86.0" prefHeight="3.0" prefWidth="100.0" promptText="New Quantity" />
+      <Button layoutX="202.0" layoutY="130.0" mnemonicParsing="false" onAction="#searchBooks" text="Search" />
+      <Button layoutX="263.0" layoutY="130.0" mnemonicParsing="false" onAction="#updateBooks" text="Update" />
+      <Button layoutX="332.0" layoutY="130.0" mnemonicParsing="false" onAction="#deleteBooks" text="Delete" />
+      <Button layoutX="396.0" layoutY="130.0" mnemonicParsing="false" onAction="#searchAllBooks" text="Search All Books" />
+      <TextField fx:id="Price" layoutX="77.0" layoutY="353.0" prefHeight="3.0" prefWidth="100.0" promptText="Price" />
+      <Label layoutX="12.0" layoutY="357.0" text="Price" />
+      <Button layoutX="10.0" layoutY="21.0" mnemonicParsing="false" onAction="#switchtoMenu" text="Back" textFill="#0909ff" />
+      <Label layoutX="12.0" layoutY="487.0" text="Result Console" />
+      <TextArea fx:id="booksResultConsole" layoutX="7.0" layoutY="508.0" prefHeight="181.0" prefWidth="170.0" />
+   </children>
+</Pane>

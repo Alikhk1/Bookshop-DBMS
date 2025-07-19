@@ -1,0 +1,23 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+
+public class App {
+
+
+    // JDBC URL for Windows Authentication
+    private static final String JDBC_URL = "jdbc:sqlserver://DESKTOP-O53IIHF\\SQLEXPRESS:1433;databaseName=BookShopManagementSystem;integratedSecurity=true;TrustServerCertificate=true;";
+    public static void main(String[] args) {
+        // Establish a connection using Windows Authentication
+        try (Connection connection = DriverManager.getConnection(JDBC_URL)) {
+            System.out.println("Connected to SQL Server database using Windows Authentication.");
+            
+        } catch (SQLException e) {
+            System.out.println("Error connecting to SQL Server database.");
+            e.printStackTrace();
+        }
+    }
+}
+
+
