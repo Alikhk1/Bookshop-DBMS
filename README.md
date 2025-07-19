@@ -12,7 +12,7 @@ Built as a semester project for the Database Systems course.
 - Maven (build and dependency management)
 
 ## 📄 Project Report
-See Project Report/Project Report.pdf for:
+See [Project Report](Project_Report/Project_Report.pdf) for:
 
 - Database design & ER diagram
 
